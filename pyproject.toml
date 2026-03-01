@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zerodha-portfolio"
-version = "0.2.0"
+version = "0.2.1"
 description = "Zerodha portfolio analytics: Markowitz efficient frontier reports with optional Fama-French factor-tilted stock selection"
 readme = "README.md"
 requires-python = ">=3.9"

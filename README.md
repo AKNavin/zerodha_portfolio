@@ -13,12 +13,6 @@ It is built for users who already think in terms of stocks and quantities and wa
 pip install zerodha-portfolio
 ```
 
-For local development:
-
-```bash
-pip install -e .[dev]
-```
-
 ## What You Input
 
 Both workflows start from a dictionary of stocks and quantities:
@@ -92,6 +86,8 @@ print(result["output_html"])
 
 - Script: `examples/example_report.py`
 - Sample output: `examples/markowitz_report.html`
+
+![Markowitz Report Preview](https://raw.githubusercontent.com/AKNavin/zerodha_portfolio/main/examples/markowitz_report.png)
 
 ## Workflow 2: Fama-French -> Markowitz Report
 
@@ -175,6 +171,8 @@ print(result["ff_selected_weights"])
 
 - Script: `examples/example_ff_markowitz.py`
 - Sample output: `examples/ff_markowitz_report.html`
+
+![FF Markowitz Report Preview](https://raw.githubusercontent.com/AKNavin/zerodha_portfolio/main/examples/ff_markowitz_report.png)
 
 ## API Summary
 
