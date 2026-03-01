@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zerodha-portfolio"
+version = "0.2.0"
+description = "Zerodha portfolio analytics: Markowitz efficient frontier reports with optional Fama-French factor-tilted stock selection"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Aksha" }
+]
+keywords = ["zerodha", "kiteconnect", "markowitz", "efficient-frontier", "fama-french", "portfolio"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Financial and Insurance Industry"
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=1.5",
+  "scipy>=1.9",
+  "plotly>=5.18",
+  "kiteconnect>=5.0",
+  "openpyxl>=3.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "build>=1.2",
+  "twine>=5.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/AKNavin/zerodha_portfolio"
+Source = "https://github.com/AKNavin/zerodha_portfolio"
+Issues = "https://github.com/AKNavin/zerodha_portfolio/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/zerodha_portfolio", "src/zerodha_markowitz"]
